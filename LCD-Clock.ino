@@ -49,9 +49,9 @@ void timeSet(){
   curMillis = millis();
   elapMillis += curMillis - preMillis;
 
-  if(elapMillis >= 1000){
+  if(elapMillis >= 1000){       //you can change this vlaue to 999 to make it run a little fast
     s++;
-    elapMillis = elapMillis - 1000;
+    elapMillis = elapMillis - 1000;  //but you also have to change this value to match
   }
 
   preMillis = curMillis;
